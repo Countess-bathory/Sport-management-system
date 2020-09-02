@@ -30,6 +30,7 @@ import { AdminComponent } from './components/admin/admin.component';
 import { AllUsersComponent } from './components/all-users/all-users.component';
 import { DisplayUserComponent } from './components/display-user/display-user.component';
 import { EditUserComponent } from './components/edit-user/edit-user.component';
+import { TrColorDirective } from './directives/tr-color.directive';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,8 @@ import { EditUserComponent } from './components/edit-user/edit-user.component';
     AdminComponent,
     AllUsersComponent,
     DisplayUserComponent,
-    EditUserComponent
+    EditUserComponent,
+    TrColorDirective
   ],
   imports: [   
     FormsModule,
