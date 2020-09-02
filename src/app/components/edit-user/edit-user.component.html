@@ -1,0 +1,34 @@
+<div class="hero overlay" style="background-image: url('assets/images/bg_3.jpg');">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-9 mx-auto text-center">
+                <h1 class="text-white">Edit User</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="site-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <form #userForm='ngForm' (ngSubmit)='validateEdit()'>
+                    <div class="form-group">
+                        <input type="text" class="form-control" [(ngModel)]='user.firstName' [ngModelOptions]="{standalone: true}" placeholder="First Name" >
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control" [(ngModel)]='user.lastName' [ngModelOptions]="{standalone: true}" placeholder="Last Name">
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary py-3 px-5">Edit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Actions</th>
+    </tr>
+    <tr *ngFor='let u of users'>
+        <td>{{u.id}}</td>
+        <td>{{u.firstName}}</td>
+        <td>{{u.lastName}}</td>
+        <td>
+            <button class="btn btn-info" (click)='goToDisplayUser(u.id)'>Display</button>
+            <button class="btn btn-success" (click)='goToEditUser(u.id)' >Edit</button>
+            <button class="btn btn-danger" (click)='deleteUser(u.id)' >Delete</button>
+        </td>
+    </tr>
+</table>
